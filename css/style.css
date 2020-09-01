@@ -588,6 +588,10 @@ a span:first-child {
           filter: invert(1);
 }
 
+#Office {
+   background: #fff;
+}
+
 #OperaAddons {
   background: #ff1b2d;
 }
