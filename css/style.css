@@ -609,6 +609,10 @@ a span:first-child {
   width: 160px;
 }
 
+#OSM {
+  background: #7092ff;
+}
+
 #Pinterest {
   background: #bd081c;
 }
