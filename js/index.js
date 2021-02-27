@@ -19,16 +19,23 @@ document.getElementById("MeteoFrance").onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  modal = document.getElementById('modal-meteo');
   if (event.target == modal) {
     closeModal('modal-meteo');
   }
 }
 
 // Optional: This just makes all the links open in a new tab
-//var links = document.links;
-//for (var i = 0; i < links.length; i++) {
-//     links[i].target = "_blank";
-//}
+document.getElementById("target").onchange = function(){
+  var links = document.links;
+  for (var i = 0; i < links.length; i++) {
+    links[i].target =  document.getElementById("target").checked ? "_blank" : "_self" ;
+  }
+  for (elem of document.getElementsByClassName('form-search')) {
+    elem.target =  document.getElementById("target").checked ? "_blank" : "_self" ;
+  }
+
+}
 
 
 // focus on search input

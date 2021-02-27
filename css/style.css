@@ -39,6 +39,73 @@
 }
 
 
+/* TOGGLE BUTTON */
+
+/* The switch - the box around the slider */
+.switch {
+ margin-top: 5px;
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #1B5E20;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #1B5E20;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+
+
 /*  */
 
 @-webkit-keyframes appear {
@@ -111,7 +178,10 @@ a span:first-child {
 
 #top {
   padding-top: 30px;
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+  /* GROWN EARLY */
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  /* DISCRET */
+  /*background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);*/
   background-blend-mode: screen;
   border-bottom: 1px solid #ebebeb;
 }
@@ -192,7 +262,7 @@ a span:first-child {
 }
 .menu-wrapper:hover .menu {
   width: 200px;
-  height: 275px;
+  height: 375px;
   border-radius: 3px;
   z-index: 999;
 }
@@ -427,12 +497,12 @@ a span:first-child {
           filter: invert(1);
 }
 
-#Facebook {
-  background: #3b5998;
+#Emoji {
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
-#Facebook img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+#Emoji img {
+  -webkit-filter: invert(0);
+          filter: invert(0);
 }
 
 #Feedly {
