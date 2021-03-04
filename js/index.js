@@ -44,6 +44,7 @@ document.getElementById("search-bar").select();
 // Get IP info
 var ip = "";
 var geolocation = "";
+var zipcode = "";
 $.ajax({
        url: 'https://api.ipify.org?format=json',
        type: "GET",
@@ -59,7 +60,8 @@ $.ajax({
                 dataType: "json",
                 success: function (response) {
                   geolocation = response.city + " (" + response.country_code + ")";
-                  document.getElementById("ip").innerText = ip + " - " + geolocation;
+                  zipcode = response.postal;
+                  document.getElementById("ip").innerText = ip + " - " + zipcode + " " + geolocation;
                 },
                 error: function (xhr, status) {
                     console.log("Geoloc : error");
