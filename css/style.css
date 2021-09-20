@@ -384,6 +384,7 @@ a span:first-child {
   font-size: 55px;
 }
 .sites a span#title {
+  display:none;
   opacity: 0;
   position: absolute;
   font-size: 16px;
@@ -401,6 +402,7 @@ a span:first-child {
   text-shadow: none;
 }
 .sites a:hover span#title {
+  display:block;
   opacity: 1;
 }
 .sites a img {
