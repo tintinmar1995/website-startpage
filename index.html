@@ -55,19 +55,22 @@
     </div>
 
     <br />
-    <ul id="localhost-list">
-      <li class='localhost-link badge badge-secondary'>8000</li>
-      <li class='localhost-link badge badge-secondary'>8080</li>
-      <li class='localhost-link badge badge-secondary'>8888</li>
-      <li class='localhost-link badge badge-secondary'>8891</li>
-    </ul>
-    <script>
-      for(el of document.getElementsByClassName('localhost-link')){
-        el.onclick = function(){
-          location.href = 'http://localhost:' + this.innerText;
-        };
-      }
-    </script>
+    <div>
+      <ul id="localhost-list">
+        <li class='badge badge-primary'>Localhost</li>
+        <li class='localhost-link badge badge-secondary'>8000</li>
+        <li class='localhost-link badge badge-secondary'>8080</li>
+        <li class='localhost-link badge badge-secondary'>8888</li>
+        <li class='localhost-link badge badge-secondary'>8891</li>
+      </ul>
+      <script>
+        for(el of document.getElementsByClassName('localhost-link')){
+          el.onclick = function(){
+            location.href = 'http://localhost:' + this.innerText;
+          };
+        }
+      </script>
+    </div>
 
     <div class="sites">
       <a id="CanalPlus" href="https://www.canalplus.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Canal%2B.svg"/><span id="title">Canal+</span></a>
