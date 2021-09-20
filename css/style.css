@@ -241,6 +241,7 @@ a span:first-child {
 }
 
 .badge {
+  cursor: pointer;
   font-size: 15px;
 }
 
