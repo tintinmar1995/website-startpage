@@ -205,7 +205,7 @@ a span:first-child {
 #search form {
   display: inline;
 }
-#search form #StartpageSearch input {
+#search form #Search input {
   position: relative;
   line-height: 34px;
   margin-bottom: 5px;
@@ -220,10 +220,10 @@ a span:first-child {
   border-radius: 3px;
   transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-#search form #StartpageSearch input:hover, #search form #StartpageSearch input:focus {
+#search form #Search input:hover, #search form #Search input:focus {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
-#search form #StartpageSearch button {
+#search form #Search button {
   display: none;
   color: #4284f3;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/59615/icon--microphone.png) no-repeat 50% 50%;
@@ -238,6 +238,10 @@ a span:first-child {
   outline: 0;
   box-shadow: none;
   z-index: 99;
+}
+
+.localhost-link {
+  font-size: 15px;
 }
 
 .menu-wrapper {
@@ -347,7 +351,6 @@ a span:first-child {
 }
 
 .sites {
-  padding-top: 3rem;
   color: inherit;
   display: flex;
   flex-flow: row wrap;

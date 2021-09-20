@@ -19,8 +19,7 @@ document.getElementById("MeteoFrance").onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  modal = document.getElementById('modal-meteo');
-  if (event.target == modal) {
+  if (event.target == document.getElementById('modal-meteo')) {
     closeModal('modal-meteo');
   }
 }
