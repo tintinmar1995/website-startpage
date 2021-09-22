@@ -35,6 +35,7 @@ document.getElementById("target").onchange = function(){
   }
 
 }
+document.getElementById("target").onchange();
 
 // focus on search input
 document.getElementById("search-bar").focus();
