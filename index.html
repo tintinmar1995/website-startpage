@@ -70,7 +70,7 @@
         <script>
           for(el of document.getElementsByClassName('localhost-link')){
             el.onclick = function(){
-              location.href = 'http://localhost:' + this.innerText;
+              window.open('http://localhost:' + this.innerText;, '_blank');
             };
           }
         </script>
