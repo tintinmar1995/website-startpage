@@ -755,6 +755,15 @@ a span:first-child {
           filter: invert(1);
 }
 
+#Strava {
+  background: #ff5100;
+}
+#Strava img {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  width: 50px;
+}
+
 #SensCritique {
   background: #0ad06f;
 }
