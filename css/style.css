@@ -271,7 +271,7 @@ a span:first-child {
 }
 .menu-wrapper:hover .menu {
   width: 200px;
-  height: 375px;
+  height: 275px;
   border-radius: 3px;
   z-index: 999;
 }
