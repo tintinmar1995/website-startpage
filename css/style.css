@@ -515,6 +515,15 @@ a span:first-child {
           filter: invert(0);
 }
 
+#EteSync {
+  background-color: #ffecb3;
+}
+#EteSync img {
+  width: 150px;
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
 #Feedly {
   background: #6cc655;
 }
