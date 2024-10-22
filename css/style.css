@@ -715,6 +715,13 @@ a span:first-child {
   width: 110px;
 }
 
+#MistralAI {
+  background: #300a24;
+}
+#MistralAI img {
+  width: 110px;
+}
+
 #Netflix {
   background: #e50914;
 }
