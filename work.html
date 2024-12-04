@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenue sur le Internet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500|Product+Sans:300,400,500|Material+Icons'> -->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="menu-wrapper">
+    <div class="menu"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/59615/icon--menu.svg"/>
+      <ul>
+        <li><a href="https://mrtn77m2sn-drive.mycozy.cloud/">Drive</a></li>
+        <li><a href="https://mail.protonmail.com/login">Mail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fluid-container">
+    <div class="d-flex justify-content-center" id="top">
+      <!--<div class="col-2">
+        <span class="sp-logo"></span><a href="https://www.startpage.com"></a></div>-->
+      <div class="col-5" style="display:contents;">
+        <div id="search">
+          <form class="form-search w-100" method="get" action="https://duckduckgo.com/" target="_self">
+            <div class="input-group" id="Search">
+              <input class="form-control input-lg" type="search" name="q" id="search-bar" placeholder="Rechercher via DuckDuckGo..." autocomplete="off"/><span class="input-group-btn">
+                <button class="btn btn-secondary" type="submit"></button></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-1">
+        <label class="switch">
+          <input id="target" type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="main-content">
+
+      <div>
+        <ul id="localhost-list">
+          <li class='badge badge-primary'>Localhost</li>
+          <li class='localhost-link badge badge-secondary'>3000</li>
+          <li class='localhost-link badge badge-secondary'>8000</li>
+          <li class='localhost-link badge badge-secondary'>8050</li>
+          <li class='localhost-link badge badge-secondary'>8080</li>
+          <li class='localhost-link badge badge-secondary'>8501</li>
+          <li class='localhost-link badge badge-secondary'>8888</li>
+          <li class='localhost-link badge badge-secondary'>8891</li>
+        </ul>
+        <script>
+          for(el of document.getElementsByClassName('localhost-link')){
+            el.onclick = function(){
+              window.open('http://localhost:' + this.innerText, '_blank');
+            };
+          }
+        </script>
+      </div>
+
+      <div class="sites">
+        <a id="Chatons" href="https://entraide.chatons.org/fr/"><img src="https://entraide.chatons.org/pictures/logo_chatons_v2.1.svg"/><span id="title">Chatons</span></a>
+        <a id="Cozy" href="https://mrtn77m2sn.mycozy.cloud"><img src="https://cozy.io/en/images/nirvana_cozy.svg"/><span id="title">Cozy Home</span></a>
+        <a id="DeepL" href="https://www.deepl.com/translator.html"><img src="https://static.deepl.com/img/logo/DeepL_Logo_darkBlue_v2.svg"/><span id="title">DeepL</span></a>
+        <a id="GitHub" href="https://github.com/login"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/59615/logo--github.svg"/><span id="title">GitHub</span></a>
+        <!--<a id="GitLab" href="https://gitlab.com/users/sign_in"><img src="https://cdn.freebiesupply.com/logos/large/2x/gitlab-logo-png-transparent.png"/><span id="title">GitLab</span></a>-->
+        <a id="Emoji" href="https://emojifrance.fr/liste-emoji-2018/"><img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Devil_Emoji_Icon_7590c90c-e509-4534-bb4f-056c2c68c9e4_grande.png?v=1571606089"/><span id="title">Emoji</span></a>
+        <a id="IsItDown" href="https://www.isitdownrightnow.com/"><img src="img/crash-img.png"/><span id="title">IsItDown?</span></a>
+        <a id="LinkedIn" href="https://www.linkedin.com/login"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/59615/logo--linkedin.svg"/><span id="title">LinkedIn</span></a>
+        <a id="LeMonde" href="https://www.lemonde.fr/"><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Le_Monde.svg"/><span id="title">LeMonde</span></a>
+        <a id="Office" href="https://www.office.com/login?es=Click&ru=%2F&msafed=0"><img src="img/Microsoft-Office-365.png"/><span id="title">Microsoft 365</span></a>
+        <a id="MistralAI" href="https://chat.mistral.ai/chat"><img src="img/le-chat-logo-large-dark.webp"/><span id="title">Mistral.ai</span></a>
+        <a id="Wikipedia" href="https://wikipedia.org"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/59615/logo--wikipedia.svg"/><span id="title">Wikipedia</span></a>
+        <a id="WordReference" href="https://www.wordreference.com/fren/"><img src="https://media.istockphoto.com/vectors/translator-logo-translation-icon-vector-vector-id1093675344?k=6&m=1093675344&s=170667a&w=0&h=ZsrFSorYphZxPJ8LylbsrQXLOUI8ZB7aSRdxPcgBiu4="/><span id="title">WordReference</span></a>
+      </div>
+
+      <br />
+      <center style='margin-bottom: 150px;'>
+        <p><em id="ip"></em></p>
+      </center>
+
+    </div>
+  </div>
+
+  <center><img src="https://mmasson.fr/index.gif" /></center>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+  </script>
+
+  <script  src="js/index.js"></script>
+</body>
+</html>
