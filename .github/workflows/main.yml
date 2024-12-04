@@ -29,7 +29,7 @@ jobs:
           ftp_username: ${{ secrets.FTP_USERNAME }}
           ftp_password: ${{ secrets.FTP_PASSWORD }}
           local_source_dir: "."
-          dist_target_dir: "www/home"
+          dist_target_dir: "mmasson/home"
           delete: "false"
           # exclude: "'^logs/' '^README.md'"
 
